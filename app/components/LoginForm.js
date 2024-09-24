@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import { API_URL } from "../config";
+import Image from "next/image";
 
 function LoginForm({ adminId, posterId }) {
   const router = useRouter();
