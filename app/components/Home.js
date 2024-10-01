@@ -36,7 +36,7 @@ export default function Home({ adminId, posterId }) {
               />
             </div>
 
-            <div className="flex flex-col justify-center items-center mt-5">
+            {/* <div className="flex flex-col justify-center items-center mt-5">
               <button
                 className="bg-[#2980b9] text-white px-4 py-2 rounded-md m-2 uppercase"
                 onClick={() => setNext(true)}
@@ -55,8 +55,39 @@ export default function Home({ adminId, posterId }) {
               >
                 Report
               </button>
-            </div>
-            <div class="pt-10 mt-12 border-t border-gray-800">
+            </div> */}
+            <table
+              style="border-collapse: collapse; width: 100%; height: 36px;"
+              border="1"
+            >
+              <tbody>
+                <tr style="height: 18px;">
+                  <td style="width: 100%; height: 18px; text-align: center;">
+                    <h2>
+                      <em>
+                        <strong>
+                          <span style="color: #ff6600;">13 BAD REVIEW</span>
+                        </strong>
+                      </em>
+                    </h2>
+                  </td>
+                </tr>
+                <tr style="height: 18px;">
+                  <td style="width: 100%; height: 18px; text-align: center;">
+                    <h2>
+                      <em>
+                        <strong>
+                          <span style="color: #ff6600;">
+                            VIEW ALL <span style="color: #993366;">REVIEW</span>
+                          </span>
+                        </strong>
+                      </em>
+                    </h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            {/* <div class="pt-10 mt-12 border-t border-gray-800">
               <p class="text-center text-sm text-gray-400">
                 <span class="block sm:inline">All rights reserved.</span>
 
@@ -76,7 +107,26 @@ export default function Home({ adminId, posterId }) {
                   Privacy Policy
                 </button>
               </p>
-            </div>
+            </div> */}
+            <table
+              style="border-collapse: collapse; width: 100%; height: 18px;"
+              border="1"
+            >
+              <tbody>
+                <tr style="height: 18px;">
+                  <td style="width: 50%; height: 18px;">
+                    <h2 style="text-align: center;">
+                      <a href="#">Contact Us</a>
+                    </h2>
+                  </td>
+                  <td style="width: 50%; height: 18px;">
+                    <h2 style="text-align: center;">
+                      &nbsp;<a href="#"> Terms &amp; Conditions</a>
+                    </h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         ) : (
           <LoginForm adminId={adminId} posterId={posterId} />
