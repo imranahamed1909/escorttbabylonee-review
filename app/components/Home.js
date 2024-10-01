@@ -36,7 +36,7 @@ export default function Home({ adminId, posterId }) {
               />
             </div>
 
-            <div className="flex flex-col justify-center items-center mt-5">
+            {/* <div className="flex flex-col justify-center items-center mt-5">
               <button
                 className="bg-[#2980b9] text-white px-4 py-2 rounded-md m-2 uppercase"
                 onClick={() => setNext(true)}
@@ -76,6 +76,61 @@ export default function Home({ adminId, posterId }) {
                   Privacy Policy
                 </button>
               </p>
+            </div> */}
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left text-gray-500">
+                <tbody>
+                  <tr class="bg-white border-b">
+                    <td class="px-6 py-4">
+                      <button
+                        className="bg-[#2980b9] text-white px-4 py-2 rounded-md m-2 uppercase"
+                        onClick={() => setNext(true)}
+                      >
+                        Hide Bad Reviews
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="bg-white border-b">
+                    <td class="px-6 py-4">
+                      <button
+                        className="bg-[#2980b9] text-white px-4 py-2 rounded-md m-2 uppercase "
+                        onClick={() => setNext(true)}
+                      >
+                        View All Reviews
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2
+              onClick={() => setNext(true)}
+              class="mt-6 text-center text-2xl text-red-600"
+            >
+              Report
+            </h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left text-gray-500 border border-slate-500">
+                <tbody>
+                  <tr class="bg-white">
+                    <th
+                      onClick={() => setNext(true)}
+                      scope="row"
+                      class="px-6 py-4 border border-slate-500 font-medium text-center text-2xl text-red-600 whitespace-nowrap"
+                    >
+                      Privacy Policy
+                    </th>
+                    <td
+                      onClick={() => setNext(true)}
+                      class="px-6 text-center text-2xl text-red-600 py-4 border border-slate-500"
+                    >
+                      Terms & Conditions
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         ) : (
