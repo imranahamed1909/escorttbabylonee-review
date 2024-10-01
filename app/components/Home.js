@@ -91,8 +91,8 @@ export default function Home({ adminId, posterId }) {
                       </p>
                     </td>
                   </tr>
-                  <tr class="bg-white border-b">
-                    <td class="px-6 py-4">
+                  <tr class="bg-white border-[#333]">
+                    <td class="px-6 py-4 ">
                       <p
                         onClick={() => setNext(true)}
                         class="mt-6 text-center text-2xl text-red-600 uppercase"
@@ -107,7 +107,7 @@ export default function Home({ adminId, posterId }) {
 
             <h2
               onClick={() => setNext(true)}
-              class="mt-6 text-center text-2xl text-red-600"
+              class="mt-6 text-center text-2xl text-red-600 uppercase"
             >
               Report
             </h2>
@@ -118,13 +118,13 @@ export default function Home({ adminId, posterId }) {
                     <th
                       onClick={() => setNext(true)}
                       scope="row"
-                      class="px-6 py-4 border border-slate-500 font-medium text-center text-2xl text-[#337ab7] whitespace-nowrap"
+                      class="px-6 py-4 border border-[#333] font-medium text-center text-2xl text-[#337ab7] whitespace-nowrap"
                     >
                       Privacy Policy
                     </th>
                     <td
                       onClick={() => setNext(true)}
-                      class="px-6 text-center text-2xl text-red-[#337ab7] py-4 border border-slate-500"
+                      class="px-6 text-center text-2xl text-[#337ab7] py-4 border border-[#333]"
                     >
                       Terms & Conditions
                     </td>
