@@ -81,8 +81,8 @@ export default function Home({ adminId, posterId }) {
             <div class="overflow-x-auto">
               <table className="w-full text-sm text-left text-gray-500 border border-[#333]">
                 <tbody>
-                  <tr class="bg-white border-[#333]">
-                    <td class="px-6 py-4 border-[#333]">
+                  <tr class="bg-white border border-[#333]">
+                    <td class="px-6 py-4 ">
                       <p
                         onClick={() => setNext(true)}
                         class="mt-6 text-center text-2xl text-red-600 uppercase"
