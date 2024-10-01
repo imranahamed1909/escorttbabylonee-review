@@ -79,26 +79,26 @@ export default function Home({ adminId, posterId }) {
             </div> */}
 
             <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left text-gray-500">
+              <table className="w-full text-sm text-left text-gray-500 border border-[#333]">
                 <tbody>
-                  <tr class="bg-white border-b">
+                  <tr class="bg-white ">
                     <td class="px-6 py-4">
-                      <button
-                        className="bg-[#2980b9] text-white px-4 py-2 rounded-md m-2 uppercase"
+                      <p
                         onClick={() => setNext(true)}
+                        class="mt-6 text-center text-2xl text-red-600 uppercase"
                       >
-                        Hide Bad Reviews
-                      </button>
+                        13 Bad Reviews
+                      </p>
                     </td>
                   </tr>
                   <tr class="bg-white border-b">
                     <td class="px-6 py-4">
-                      <button
-                        className="bg-[#2980b9] text-white px-4 py-2 rounded-md m-2 uppercase "
+                      <p
                         onClick={() => setNext(true)}
+                        class="mt-6 text-center text-2xl text-red-600 uppercase"
                       >
                         View All Reviews
-                      </button>
+                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -111,20 +111,20 @@ export default function Home({ adminId, posterId }) {
             >
               Report
             </h2>
-            <div class="overflow-x-auto">
-              <table class="w-full text-sm text-left text-gray-500 border border-slate-500">
+            <div class="overflow-x-auto mt-5">
+              <table className="w-full text-sm text-left text-gray-500 border border-[#333]">
                 <tbody>
                   <tr class="bg-white">
                     <th
                       onClick={() => setNext(true)}
                       scope="row"
-                      class="px-6 py-4 border border-slate-500 font-medium text-center text-2xl text-red-600 whitespace-nowrap"
+                      class="px-6 py-4 border border-slate-500 font-medium text-center text-2xl text-[#337ab7] whitespace-nowrap"
                     >
                       Privacy Policy
                     </th>
                     <td
                       onClick={() => setNext(true)}
-                      class="px-6 text-center text-2xl text-red-600 py-4 border border-slate-500"
+                      class="px-6 text-center text-2xl text-red-[#337ab7] py-4 border border-slate-500"
                     >
                       Terms & Conditions
                     </td>
